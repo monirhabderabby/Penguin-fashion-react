@@ -3,5 +3,28 @@
     height: auto;
 }
 .subscribe{
+    float: center;
+    height: 50px;
+    width: 35%;
+    margin: 0px auto;
     border: 0.5px solid black;
+    display: flex;
+    align-items: center;
+}
+.subscribe input{
+    height: 80%;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding-left: 5%;
+}
+.subscribe .btn{
+    font-size: 20px;
+    background-color: transparent;
+    height: 100%;
+    float: inline-end;
+    border: 0;
+    background-color: #f6804c;
+    color: white;
 }

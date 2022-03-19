@@ -6,9 +6,13 @@ const Footer = () => {
         <div className='footer'>
             <div>
                 <div className='subscribe'>
-                    <input type="text" />
-                    <button>Subscribe</button>
+                    <input type="text" placeholder='Type your email here'/>
+                    <button className='btn'>Subscribe</button>
                 </div>
+            </div>
+
+            <div>
+                
             </div>
         </div>
     );
