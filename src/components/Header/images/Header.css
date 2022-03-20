@@ -45,3 +45,24 @@
     margin: 0px 20px;
     cursor: pointer;
 }
+
+/* =====Modal Btn===== */
+.modal-btn{
+    background-color: #f6804c;
+    border: 0.5px solid black;
+    padding: 5px 10px;
+}
+.modal-btn:hover{
+    background-color: #f86d32;
+}
+label{
+    width: 80px;
+}
+.modal-input{
+    width: 50%;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+}

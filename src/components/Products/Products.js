@@ -13,11 +13,15 @@ const Products = () => {
     },[])
     return (
         <div>
-            <h2 className='pro-title'>Leatest Products</h2>
+            <h2 className='pro-title mt-3 mb-3'>Leatest Products</h2>
             
-            {
-                Products.map(p=> <Product product={p} key={p.id}></Product>)
-            }
+            <div className='container'>
+                <div className='row g-lg-4'>
+                {
+                    Products.map(p=> <Product product={p} key={p.id}></Product>)
+                }
+                </div>
+            </div>
         </div>
     );
 };
