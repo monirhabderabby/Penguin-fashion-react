@@ -12,8 +12,14 @@ const Footer = () => {
             </div>
 
             <div>
-                
+                <a href="">Shop</a>
+                <a href="">About Us</a> <br />
+                <a href="">Terms and Condition</a>
+                <a href="">Be a Penguiner</a> <br />
+                <a href="">Contact Us</a>
+                <a href="">Our Team</a>
             </div>
+            &copy; All Right Reserved By Penguin Fashion | 1999 - 2022
         </div>
     );
 };

@@ -1,7 +1,7 @@
 .footer{
     width: 100%;
     height: auto;
-    padding: 20px 0px;
+    padding-top: 20px;
     background-color: #fef5ed;
 }
 .subscribe{
@@ -29,4 +29,9 @@
     border: 0;
     background-color: #f6804c;
     color: white;
+}
+
+a{
+    text-decoration: none;
+    margin: 0px 5px;
 }
