@@ -2,16 +2,11 @@ import React from 'react';
 import './Header.css'
 import logo from '../images/logo.png'
 import Banner from '../Banner/Banner';
-import { useState } from 'react';
-import { useEffect } from 'react';
 
-const Header = () => {
-    const {count, setCount} = useState(0)
-
-    const Cart = () =>{
-       const newCount = setCount+count
-       setCount(newCount)
-    }
+const Header = (props) => {
+    const { cartValue } = props;
+    console.log(cartValue);
+    
     return (
         <div className='header'>
             <div className='navBar'>
@@ -23,7 +18,7 @@ const Header = () => {
                     <p>Home</p>
                     <p>About Us</p>
                     <p type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">Account</p>
-                    <p>Cart<sup>{count}</sup></p>
+                    <p>Cart<sup>{cartValue}</sup></p>
                 </div>
 
                 {/* <!-- Modal --> */}

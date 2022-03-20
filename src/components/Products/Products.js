@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Product from '../Product/Product';
 import './Products.css'
 
-const Products = () => {
+const Products = (props) => {
     const [Products, setProducts] = useState([])
     useEffect(()=>{
         fetch('https://monirhabderabby.github.io/shoe-api/Shoe-API.json')
@@ -18,7 +18,7 @@ const Products = () => {
             <div className='container'>
                 <div className='row g-lg-4'>
                 {
-                    Products.map(p=> <Product product={p} key={p.id}></Product>)
+                    Products.map(p=> <Product setCartCount={props.setCartCount} product={p} key={p.id}></Product>)
                 }
                 </div>
             </div>

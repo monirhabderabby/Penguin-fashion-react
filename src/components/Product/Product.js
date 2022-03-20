@@ -1,7 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
 import './Product.css'
 
 const Product = (props) => {
+    const {setCartCount} = props
     const {image, name, price} = props.product
 
     return (
@@ -10,9 +12,9 @@ const Product = (props) => {
                 <img src={image} alt="" />
                 <h2>{name}</h2>
                 <h3>${price}</h3>
-                <button type="button" class="cart-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Add To Cart
-</button>
+                <button onClick={setCartCount} type="button" class="cart-btn">
+                    Add To Cart
+                    </button>
             </div>
 
             
