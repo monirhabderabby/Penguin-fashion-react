@@ -11,7 +11,7 @@ const Header = (props) => {
         <div className='header'>
             <div className='navBar'>
                 <img src={logo} alt="logo" className='logo' />
-                <div className='searchBox'>
+                <div className='searchBox d-lg-flex d-sm-none'>
                     <input type="text" /><p>Search</p>
                 </div>
                 <div className='menuBar'>

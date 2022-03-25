@@ -7,7 +7,8 @@ const Product = (props) => {
     const {image, name, price} = props.product
 
     return (
-        <div className='col-lg-3 mb-5'>
+        <div className='col-lg-3 col-md-6 mb-5' data-aos="fade-up"
+        data-aos-duration="3000">
             <div className='custom-card'>
                 <img src={image} alt="" />
                 <h2>{name}</h2>
