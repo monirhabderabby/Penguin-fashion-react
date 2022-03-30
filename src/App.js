@@ -8,6 +8,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.js'
 import { useEffect } from 'react';
 
+//react route installation completed
 function App() {
   const [count, setCount] = useState(0)
     function setCartCount (){
